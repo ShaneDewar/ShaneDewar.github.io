@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../homepageStyle.css" type="text/css">
+
+
+ </head>
+ <body>
+ <div class="linkBarContainer">
+
+ <ul class="linkBar" id="top">
+   <li class="linkList"><a class="linkBarButton" href="../homepage.html"><h3>Home Page</h3></a></li>
+   <li class="linkList"><a class="linkBarButton" href="../contentPage/contentPage.html"><h3>Content Page</h3></a></li>
+   <li class="linkList"><a class="linkBarButton" href="../contactFormPage/contactFormPage.html"><h3>Links & Contact</h3></a></li>
+   <li class="linkList"><a class="linkBarButton" href="../gearCalc/gearCalc.html"><h3>Gear Calculator</h3></a></li>
+ </ul>
+ </div>
+ 
+ <h1>Beep Beep Boop</h1>
+ <br>
+ This page will tell you the gear inch of the gears on your bicycle. 
+ This is the mechanical advantage of that particular gear combination. You will need the
+ wheel diameter, including tire, in inches, the number of teeth on the chainring, and the
+ number of teeth on the rear cog.
+ <br><br>
+   <form>
+    <fieldset>
+      <legend>Super Duper Gear Inch Calculator!</legend>
+   
+      <br><br>
+      
+      <label for="wheelDiameter">Wheel Diameter in inches: </label>
+      <input type="number" name="wheelDiameter" id="wheelDiameter">
+      <br>
+    
+      <label for="chainring">Enter # of teeth on chainring: </label>
+      <input type="number" name="chainring" id="chainring">
+      <br>
+      
+      <label for="rearCog">Enter teeth on rear cog: </label>
+      <input type="number" name="rearCog" id="rearCog">
+      <br>
+      
+      <input type="submit" id="urlSubmit">
+    </fieldset>
+  </form>
+  
+  <br><br>
+  This gear combination is: <span id="gearInches"></span> inches.
+ <script src="gearCalc.js"></script>
+ 
+ </body>
+ 
+ 
+ </html>
