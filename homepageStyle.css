@@ -1,0 +1,92 @@
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+body {background-color: #D8D8D8;}
+
+div.scrollBox {
+  backgroud-color: silver;
+  width: 300px;
+  height: 400px;
+  overflow: scroll;
+  
+}
+
+.carouselContainer {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.linkBarContainer {
+  margin: auto;
+  width: 38%;
+  text-align: center;
+
+}
+
+.linkBar {
+  list-style-type: none;
+  padding: 3px;
+  overflow: hidden;
+}
+
+.linkList {
+  float: left;
+}
+
+.linkBarButton {
+  display: block;
+  padding: 4px;
+  background-color: gray;
+}
+ 
+.carouselImage {
+  display: none;
+}
+
+/*fwd and back buttons*/
+.forward, .back {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* forward button positioning */
+.forward {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* make the buttons visible on hover*/
+.back:hover, .forward:hover {
+  backgroud-color: black;
+}
+
+/* caption text formatting */
+.caption {
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.pageNum {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
