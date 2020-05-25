@@ -45,6 +45,7 @@ div.scrollBox {
   display: block;
   padding: 4px;
   background-color: gray;
+  font-size: 12px;
 }
  
 .carouselImage {
