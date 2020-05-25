@@ -10,6 +10,13 @@ div.scrollBox {
   
 }
 
+.downloadButton {
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  backgroud-color: black;
+  
+}
 .carouselContainer {
   max-width: 600px;
   position: relative;
@@ -31,6 +38,7 @@ div.scrollBox {
 
 .linkList {
   float: left;
+  border: 1px solid black;
 }
 
 .linkBarButton {
