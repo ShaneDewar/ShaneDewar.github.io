@@ -1,8 +1,13 @@
-// This would have been impossible without help from w3schools, especially setInterval and clearInterval methods
-// described at w3schools.com/jsref/met_win_clearinterval.asp https://www.w3schools.com/jsref/obj_window.asp 
-// https://www.w3schools.com/jsref/met_win_setinterval.asp also a lot of help came from
-// https://www.w3schools.com/jsref/met_win_settimeout.asp but this led to issues. 
-// https://www.w3schools.com/howto/howto_js_slideshow.asp provided fundimentals of how a slideshow works.
+/* This would have been impossible without help from w3schools, especially setInterval and clearInterval methods
+ described at w3schools.com/jsref/met_win_clearinterval.asp https://www.w3schools.com/jsref/obj_window.asp 
+ https://www.w3schools.com/jsref/met_win_setinterval.asp also a lot of help came from
+ https://www.w3schools.com/jsref/met_win_settimeout.asp but this led to issues. 
+ https://www.w3schools.com/howto/howto_js_slideshow.asp provided fundimentals of how a slideshow works.
+ A lot of this was trial and error and googling how to get the interactions to do what I wanted. I originally
+ wanted to be able to have buttons as floating images and have the carousel images be JavaScript objects that
+ linked to specific pages. Additionally, I wanted there to be a pool of objects and have the carousel choose
+ X random ones on page load. I ran out of time and skill, however. 
+*/
 
 // imageIndex is the array position of which image will be active in our carousel
 var imageIndex = 1;

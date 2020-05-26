@@ -2,15 +2,16 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>The Poorly Titled Content Page</title>
   <link rel="stylesheet" href="../homepageStyle.css" type="text/css">
-
-
  </head>
  <body>
- 
-  <div class="linkBarContainer">
 
+<!-- This is the html bones of my horizontal bar. Used margins for a while but it wasnt consistent looking
+ in different browsers. I wanted it to stay  horizontal a much as possible. Eventually I came across the
+ suggestion to make the buttons into a table at: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/
+ which I ended up applying to my bar successfully -->
+ <div class="linkBarContainer">
  <ul class="linkBar" id="top">
    <li class="linkList"><a class="linkBarButton" href="../index.html"><h3>Home Page</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="../contentPage/contentPage.html"><h3>Content Page</h3></a></li>
@@ -18,13 +19,44 @@
    <li class="linkList"><a class="linkBarButton" href="../gearCalc/gearCalc.html"><h3>Gear Calculator</h3></a></li>
  </ul>
  </div>
- Some interesting text which has been updated!<br>
+ 
+ 
+ <h1 class="gold">Warning: Contains almost <em>no</em> content</h1>
+ <h3 class="brown">This page will eventually contain content regarding my bicycles but instead it just has an embeded picture. <br>
+ You can 
+ click the link to download directly, or click the button to open a bigger version in your browser.<br>It also has a bunch
+ of filler text intermixed with images that I used to play around with positioning images in text. Not as refined as I want...</h3>
+ 
+ <!-- Resized the picture down, the button being clicked triggers a JS event that uses window.open to download
+ the picture to the browser. --> 
  <img src="92crisscross_smaller.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" width="30%"><br>
  <button id="downloadButton" class="downloadButton">Click to Download!</button><br>
-  <a href="92crisscross_smaller.jpg" download>Or click here to save locally</a>
+ <a href="92crisscross_smaller.jpg" download>Or click here to save locally</a>
  
+ <br><br><h3>More filler text from https://loremipsum.io/generator</h3>
  
- <script src="contentPageJS.js"></script>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Scelerisque varius morbi enim nunc faucibus a. In cursus turpis massa tincidunt dui ut ornare. In ornare quam viverra orci sagittis eu volutpat odio. Sed turpis tincidunt id aliquet risus feugiat in. Pretium fusce id velit ut tortor pretium viverra. Risus nec feugiat in fermentum posuere. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Leo integer malesuada nunc vel risus commodo viverra. Mattis aliquam faucibus purus in massa tempor.
+
+Nullam eget felis eget nunc lobortis mattis. Tincidunt vitae semper quis lectus. Porttitor lacus luctus accumsan tortor posuere. Amet consectetur adipiscing elit duis. Morbi tristique senectus et netus et malesuada fames. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Duis at tellus at urna condimentum. Viverra aliquet eget sit amet tellus cras adipiscing. Eget gravida cum sociis natoque penatibus. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Augue neque gravida in fermentum. Dui nunc mattis enim ut tellus. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.
+<br><img src="6.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" class='left' width="30%"><br>
+
+Diam maecenas ultricies mi eget mauris pharetra. Velit laoreet id donec ultrices. At volutpat diam ut venenatis tellus in metus. Convallis aenean et tortor at risus viverra adipiscing. Augue eget arcu dictum varius duis at consectetur lorem. A diam maecenas sed enim. Nibh tortor id aliquet lectus proin. Nulla facilisi etiam dignissim diam quis enim. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nullam non nisi est sit amet facilisis magna. Turpis egestas sed tempus urna et.
+<img src="2.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" width="30%"><br>
+
+<br>Metus vulputate eu scelerisque felis imperdiet. Nisl nisi scelerisque eu ultrices vitae auctor. Arcu non odio euismod lacinia at. Id neque aliquam vestibulum morbi blandit cursus. Diam sollicitudin tempor id eu nisl. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Dolor sed viverra ipsum nunc aliquet. Gravida in fermentum et sollicitudin. Hendrerit dolor magna eget est lorem ipsum dolor sit.
+<br><img src="5.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" class='left' width="30%"><br>
+
+Tellus molestie nunc non blandit massa enim nec dui nunc. Ultrices dui sapien eget mi proin sed libero. Ipsum a arcu cursus vitae congue mauris rhoncus. Nibh tellus molestie nunc non. Habitant morbi tristique senectus et netus. Id cursus metus aliquam eleifend mi. Auctor elit sed vulputate mi sit amet mauris commodo. A lacus vestibulum sed arcu non. Tortor dignissim convallis aenean et tortor. Risus pretium quam vulputate dignissim suspendisse in est ante in. Lacus sed turpis tincidunt id aliquet.
+<br><img src="4.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" class='right' width="30%"><br>
+
+Lorem mollis aliquam ut porttitor leo a. Donec ultrices tincidunt arcu non. Venenatis lectus magna fringilla urna porttitor rhoncus. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Sed sed risus pretium quam. Nulla aliquet porttitor lacus luctus accumsan. Gravida rutrum quisque non tellus orci ac auctor. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Blandit libero volutpat sed cras ornare arcu dui vivamus. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Varius quam quisque id diam vel. Massa sapien faucibus et molestie ac feugiat. Ut etiam sit amet nisl purus in mollis.
+<img src="3.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" class='left' width="30%"><br>
+
+Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Sagittis orci a scelerisque purus semper eget. Pretium lectus quam id leo in vitae turpis. Eget arcu dictum varius duis at consectetur lorem donec. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Imperdiet proin fermentum leo vel orci. Gravida arcu ac tortor dignissim convallis aenean. Vulputate ut pharetra sit amet aliquam id. In est ante in nibh. Amet aliquam id diam maecenas ultricies mi eget mauris. In aliquam sem fringilla ut morbi tincidunt augue. Sit amet justo donec enim diam vulputate ut. Congue quisque egestas diam in arcu cursus euismod quis viverra. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Erat nam at lectus urna duis convallis convallis tellus id. Amet risus nullam eget felis eget.
+<img src="1.jpg" alt="1992 Schwinn Criss Cross in Blue Velvet Paint" class='centered' width="30%"><br>
+
+<a href="#top">To the top</a> 
+<script src="contentPageJS.js"></script>
  
  </body>
  </html>

@@ -2,14 +2,15 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Gear Inch Calculator Form</title>
   <link rel="stylesheet" href="../homepageStyle.css" type="text/css">
-
-
  </head>
  <body>
+ <!-- This is the html bones of my horizontal bar. Used margins for a while but it wasnt consistent looking
+ in different browsers. I wanted it to stay  horizontal a much as possible. Eventually I came across the
+ suggestion to make the buttons into a table at: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/
+ which I ended up applying to my bar successfully -->
  <div class="linkBarContainer">
-
  <ul class="linkBar" id="top">
    <li class="linkList"><a class="linkBarButton" href="../index.html"><h3>Home Page</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="../contentPage/contentPage.html"><h3>Content Page</h3></a></li>
@@ -17,24 +18,44 @@
    <li class="linkList"><a class="linkBarButton" href="../gearCalc/gearCalc.html"><h3>Gear Calculator</h3></a></li>
  </ul>
  </div>
+  
+ <h1 class="gold centered">Bicycle Gear Inch Calculator</h1>
  
- <h1>Beep Beep Boop</h1>
- <br>
- This page will tell you the gear inch of the gears on your bicycle. 
- This is the mechanical advantage of that particular gear combination. You will need the
- wheel diameter, including tire, in inches, the number of teeth on the chainring, and the
- number of teeth on the rear cog.
+ <img src="gears.jpg" style="width:60%" class="centered"><br><br>
+
+Gear inches is a unit of measurement which allows the comparision of the gearing ratios of a bicycle drivetrain. For example, a harder
+to pedal gear will a higher gear inch value than an easier to push ratio. A ratio for climbing a mountain might be less than 30 gear inches where 
+as you may have a 90 or 100 gear inch for flat or downhill areas. 
+ <br><br>
+ This page contains a form that takes input both from a drop down selection and numeric text input. A JavaScript program
+ is called which calculates the Gear Inch value of the given selections. The value is then displayed below the form. 
+ <br><br>
+ Eventually, I'd like to be allow the user to give multiple gear ratio and create a graph of the gear inches and the jumps
+ between them.
  <br><br>
    <form>
     <fieldset>
       <legend>Super Duper Gear Inch Calculator!</legend>
-   
-      <br><br>
-      
-      <label for="wheelDiameter">Wheel Diameter in inches: </label>
-      <input type="number" name="wheelDiameter" id="wheelDiameter">
-      <br>
-    
+      <br>    
+        <label for="wheelDiameter">What is your wheel size?</label>
+          <select id="wheelDiameter" name="wheelDiameter">
+            <option value=25>700c or 29er</option>
+            <option value=25.3>27"</option>
+            <option value=23>650b or 27.5"</option>
+            <option value=22>26"</option>
+          </select><br>
+       
+       
+       <label for="tireSize">And the size of your tire?</label>
+          <select id="tireSize" name="tireSize">
+          <option value=2>1" or 25c</option>
+          <option value=2.5>1.25" or 32c</option>
+          <option value=3>1.5" or 38c</option>
+          <option value=3.5>1.75" or 45c</option>
+          <option value=4>2" or 52c</option>
+          <option value=4.5>2.25" or 58c</option>
+        </select><br>   
+          
       <label for="chainring">Enter # of teeth on chainring: </label>
       <input type="number" name="chainring" id="chainring">
       <br>
@@ -48,7 +69,10 @@
   </form>
   
   <br><br>
-  This gear combination is: <span id="gearInches"></span> inches.
+  <h3 class="brown centered">This gear combination is: <span class="gearInches" id="gearInches"></span> inches.</h3>
+ 
+ <br>
+ <a href="#top">To the top</a>
  <script src="gearCalc.js"></script>
  
  </body>

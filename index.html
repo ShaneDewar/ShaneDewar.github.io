@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Using skeleton from earier in the course -->
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Shane's Home Page</title>
   <link rel="stylesheet" href="homepageStyle.css" type="text/css">
  </head>
 
  <body>
+ 
+ <!-- This is the html bones of my horizontal bar. Used margins for a while but it wasnt consistent looking
+ in different browsers. I wanted it to stay  horizontal a much as possible. Eventually I came across the
+ suggestion to make the buttons into a table at: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/
+ which I ended up applying to my bar successfully -->
  <div class="linkBarContainer">
-
  <ul class="linkBar" id="top">
    <li class="linkList"><a class="linkBarButton" href="index.html"><h3>Home Page</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="contentPage/contentPage.html"><h3>Content Page</h3></a></li>
@@ -17,49 +21,52 @@
  </ul>
  </div>
  
- <!-- carousel container -->
+ <!-- carousel container was made with a huge amount of guidence from w3 schools, mozilla MDN, 
+ https://www.w3schools.com/howto/howto_js_slideshow.asp was a major help, -->
  <div class="carouselContainer">
  
    <div class="carouselImage">
      <div class="pageNum">1 of 4</div>
      <img src="bianchi 1.jpg" style="width:100%">
-     <div class="caption">Picture of a Bianchi!"</div>
+     <div class="caption">Picture of a Bianchi!</div>
    </div>
   
    <div class="carouselImage">
      <div class="pageNum">2 of 4</div>
      <img src="bianchi 2.jpg" style="width:100%">
-     <div class="caption">Picture of a Bianchi!"</div>
+     <div class="caption">Another picture of a Bianchi! Wow!</div>
    </div>
 
    <div class="carouselImage">
      <div class="pageNum">3 of 4</div>
-     <img src="bianchi 3.jpg" style="width:100%">
-     <div class="caption">Picture of a Bianchi!"</div>
+     <img src="bianchi 4.jpg" style="width:100%">
+     <div class="caption">One more Bianchi!</div>
    </div>
 
    <div class="carouselImage">
      <div class="pageNum">4 of 4</div>
-     <img src="bianchi 4.jpg" style="width:100%">
-     <div class="caption">Picture of a Bianchi!"</div>
+     <img src="bianchi 5.jpg" style="width:100%">
+     <div class="caption">OK I lied; More Bianchis!!</div>
    </div>  
 
-   <a class="back" onclick="nextPicture(-1)">BCK</a>
-   <a class="forward" onclick="nextPicture(1)">FWD</a>
+   <!-- markers for our forward and back buttons -->
+   <a class="back" onclick="nextPicture(-1)">Previous</a>
+   <a class="forward" onclick="nextPicture(1)">Next</a>
 
   
 </div>
 <br>
 
+<h3 class="brown">
 Well, this isn't much of a home page, but it is a start. Somehow I have to figure out how to
-make this aesthetically interesting. That's the hardest part! <br><br>Anyway, this webpage
-will show-case a little bit of stuff about bicycles, including my bicycles. It is an exercise
-in basic web development, and will incorporate HTML, CSS and JavaScript.<br><br>
+make this aesthetically interesting. That's the hardest part! <br>
+<br>Anyway, this webpage will show-case a little bit of stuff about bicycles, including my bicycles. It is an exercise
+in basic web development, and will incorporate HTML, CSS and JavaScript.<br></h3>
 Everything on this website is written by me, except filler text which was generated to help me
 work on the look of the pages, from https://loremipsum.io/generator . All photographs were taken 
 and are owned by me.<br><br>
 I don't own or control anything at any of the external links. <br><br>
-Here is filler text:<br>
+Here is filler text so the "top" link at the bottom of the page can be tested:<br>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique sollicitudin. Dui vivamus arcu felis bibendum. Et malesuada fames ac turpis egestas sed tempus urna et. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Id eu nisl nunc mi. Magna eget est lorem ipsum dolor sit. Praesent tristique magna sit amet purus. Massa tempor nec feugiat nisl pretium fusce. Urna et pharetra pharetra massa massa. Ac felis donec et odio pellentesque diam volutpat. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Iaculis eu non diam phasellus vestibulum. Pharetra vel turpis nunc eget lorem dolor sed. Vulputate mi sit amet mauris. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius.
 <p>

@@ -10,21 +10,26 @@
 
  <body>
  
+<!-- This is the html bones of my horizontal bar. Used margins for a while but it wasnt consistent looking
+ in different browsers. I wanted it to stay  horizontal a much as possible. Eventually I came across the
+ suggestion to make the buttons into a table at: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/
+ which I ended up applying to my bar successfully -->
  <div class="linkBarContainer">
-
  <ul class="linkBar" id="top">
    <li class="linkList"><a class="linkBarButton" href="../index.html"><h3>Home Page</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="../contentPage/contentPage.html"><h3>Content Page</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="../contactFormPage/contactFormPage.html"><h3>Links & Contact</h3></a></li>
    <li class="linkList"><a class="linkBarButton" href="../gearCalc/gearCalc.html"><h3>Gear Calculator</h3></a></li>
  </ul>
- </div><br>
+ </div>
+ 
+ <br>
  This page contains an unordered list of external links. These links are inside a scroll box. The links are repeated
  a few times to show the scroll feature of the box. Additionally, it contains a "contact me" mock up that sends the information
  POST to the OSU check page.
  <br>
 
- <h2>Send me a message via POST!</h2>
+ <h2 class="brown">Send me a message via POST!</h2>
  <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
    <label for="userName">What's your name: </label><br>
    <input type="text" id="userName" name="userName"><br>
@@ -38,30 +43,40 @@
    <input type="submit" value="Send your message">
  </form>
  
- <h1>Check out some links that interest me!</h1>
+ <h1 class="rose">Check out some links that interest me:</h1>
  <div class="scrollBoxContainer">
  <div class="scrollBox">
    <ul>
-     <li><a href="https://www.sheldonbrown.com/beginners.html">Sheldon Brown's Fantastic Bicycle Website</a></li>
-     <li><a href="https://www.bikeforums.net">Bike Forums forum list to share ideas and images.</a></li>
-     <li><a href="https://forum.cyclinguk.org">Cycling UK's bicycle forums.</a></li>
-     <li><a href="https://forums.mtbr.com/forum.php">MTBR mountain bicycle forums.</a></li>
-     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/">Schwin Catalogs hosted by Waterford Bicycles.</a></li>
-     <li><a href="https://www.sheldonbrown.com/beginners.html">Sheldon Brown's Fantastic Bicycle Website</a></li>
-     <li><a href="https://www.bikeforums.net">Bike Forums forum list to share ideas and images.</a></li>
-     <li><a href="https://forum.cyclinguk.org">Cycling UK's bicycle forums.</a></li>
-     <li><a href="https://forums.mtbr.com/forum.php">MTBR mountain bicycle forums.</a></li>
-     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/">Schwin Catalogs hosted by Waterford Bicycles.</a></li>
-     <li><a href="https://www.sheldonbrown.com/beginners.html">Sheldon Brown's Fantastic Bicycle Website</a></li>
-     <li><a href="https://www.bikeforums.net">Bike Forums forum list to share ideas and images.</a></li>
-     <li><a href="https://forum.cyclinguk.org">Cycling UK's bicycle forums.</a></li>
-     <li><a href="https://forums.mtbr.com/forum.php">MTBR mountain bicycle forums.</a></li>
-     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/">Schwin Catalogs hosted by Waterford Bicycles.</a></li>
-     <li><a href="https://www.sheldonbrown.com/beginners.html">Sheldon Brown's Fantastic Bicycle Website</a></li>
-     <li><a href="https://www.bikeforums.net">Bike Forums forum list to share ideas and images.</a></li>
-     <li><a href="https://forum.cyclinguk.org">Cycling UK's bicycle forums.</a></li>
-     <li><a href="https://forums.mtbr.com/forum.php">MTBR mountain bicycle forums.</a></li>
-     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/">Schwin Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>
+     <li><a href="https://www.sheldonbrown.com/beginners.html" class="gold">Sheldon Brown's Fantastic Bicycle Website</a></li>
+     <li><a href="https://www.bikeforums.net" class="gold">Bike Forums forum list to share ideas and images.</a></li>
+     <li><a href="https://forum.cyclinguk.org" class="gold">Cycling UK's bicycle forums.</a></li>
+     <li><a href="https://forums.mtbr.com/forum.php" class="gold">MTBR mountain bicycle forums.</a></li>
+     <li><a href="https://waterfordbikes.com/w/culture/schwinn-catalogs/" class="gold">Schwinn Catalogs hosted by Waterford Bicycles.</a></li>     
    </ul>
  </div></div><br>
  <br>

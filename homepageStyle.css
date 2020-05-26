@@ -1,14 +1,62 @@
+/* w3schoosl.com was my major reference for html and css. https://www.w3schools.com/Css/css_align.asp */
+
 * {box-sizing: border-box;}
 img {vertical-align: middle;}
-body {background-color: #D8D8D8;}
+body {background-color: #333333;
+      color: #e6e6e6; }
 
+
+/* Playing around with the color palate of some of the text. Colors from https://www.w3schools.com/colors/colors_picker.asp */      
+.brown {
+  color: #DEB887;
+} 
+
+.rose {
+  color: #FFC0CB;
+}
+.gold {
+  color: #DAA520
+}
+
+.scrollboxContainer {
+  background-color: red;
+}
+/* this is the scroll box for the links page. It allows the user to scroll up and down in a formatted box 
+Major help with overflow and scrolling from https://www.w3schools.com/cssref/pr_pos_overflow.asp*/     
 div.scrollBox {
+  color: red;
+  backgroud-color: yellow;
   text-align:center;
   width: 300px;
   height: 400px;
   overflow: scroll;
 }
 
+/* Used to align my images classed as left to the left of the screen.*/
+.left {
+  display: block;
+  margin-left: 20;
+  width: 40%;
+}
+
+/* Used to align my images classed as right to the right of the screen.*/
+.right {
+  display: block;
+  float: right;
+  width: 40%;
+}
+
+/* Used to align my images classed as right to the right of the screen.*/
+.centered {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* nice rounded edge button for new tab download on content page 
+https://www.w3schools.com/tags/tag_button.asp was used as a reference */
 .downloadButton {
   border-radius: 10px;
   padding: 12px 20px;
@@ -16,42 +64,48 @@ div.scrollBox {
   backgroud-color: black;
   
 }
+
+/* This encloses the carousel to allow me to manage the size and position */
 .carouselContainer {
   max-width: 600px;
   position: relative;
   margin: auto;
 }
 
+/* This container formatting allows me to center the bar and keep it 1 horizontal bar on medium-large brower pages */
 .linkBarContainer {
+  display:table;
   margin: auto;
-  width: 30%;
-  text-align: center;
-
 }
 
+/* This css hides the "dots" in front of the list item anad also organizes the buttons a little */
 .linkBar {
   list-style-type: none;
   padding: 3px;
   overflow: hidden;
 }
 
+/* This keeps the list items together and puts a border around the buttons, otherwise it's
+ a vertical stacked list and not a bar of buttons */
 .linkList {
   float: left;
-  border: 1px solid black;
+  border: 1px solid #ffffff;
 }
 
+/* Control color/size of the buttons */ 
 .linkBarButton {
   display: block;
   padding: 4px;
-  background-color: gray;
+  background-color: #666666;
   font-size: 12px;
 }
  
+/* This is used to hide the inactive images in the carousel */
 .carouselImage {
   display: none;
 }
 
-/*fwd and back buttons*/
+/*fwd and back buttons, controls positioning, color, size*/
 .forward, .back {
   cursor: pointer;
   position: absolute;
@@ -62,9 +116,6 @@ div.scrollBox {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
 /* forward button positioning */
@@ -80,7 +131,7 @@ div.scrollBox {
 
 /* caption text formatting */
 .caption {
-  color: white;
+  color: AliceBlue;
   font-size: 16px;
   padding: 8px 12px;
   position: absolute;
@@ -90,11 +141,17 @@ div.scrollBox {
   
 }
 
+/* Displays the number of the page of image, ie 1/5 or 3/4 etc */
 .pageNum {
-  color: white;
+  color: burlywood;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+/* just coloring for Gear Inches */
+.gearInches {
+  color: red;
 }
 
