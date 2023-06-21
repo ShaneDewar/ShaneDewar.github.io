@@ -1,0 +1,22 @@
+{
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "Shane Dewar - Software Developer",
+	"language": "en",
+	"home_page_url": "https://shanedewar.com/",
+	"feed_url": "https://shanedewar.com/feed/feed.json",
+	"description": "Join me in my explorations in computer science.",
+	"author": {
+		"name": "Shane Dewar",
+		"url": "https://shanedewar.com/about-me/"
+	},
+	"items": [
+		{
+			"id": "https://shanedewar.com/blog/post1/",
+			"url": "https://shanedewar.com/blog/post1/",
+			"title": "Shane&#39;s first post.",
+			"content_html": "<h2 id=\"hi-i-m-shane\" tabindex=\"-1\">Hi I'm Shane 👋 <a class=\"header-anchor\" href=\"https://shanedewar.com/blog/post1/\">#</a></h2>\n<p>Welcome to my portfolio site built off of <a href=\"https://www.11ty.dev/\">eleventy</a> and hosted on GitHub Pages. Besides connecting my GitHub and LinkedIn to my porfolio, as time progresses more of my projects will be published here with some information about why I made them, some examples of how they work, screenshots, etc.</p>\n<pre class=\"language-py\" tabindex=\"0\"><code class=\"language-py\"><span class=\"token keyword\">print</span><span class=\"token punctuation\">(</span><span class=\"token string\">'Hello, World!'</span><span class=\"token punctuation\">)</span>\n</code></pre>\n<p>Feel free to send me a message or connect with me at any of my links below!</p>\n",
+			"date_published": "2023-06-21T00:00:00Z"
+		}
+		
+	]
+}

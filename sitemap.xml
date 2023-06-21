@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://shanedewar.com/blog/post1/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/about/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/blog/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/first/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/eleventy/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/github-pages/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/launch/</loc>
+		<lastmod>2023-06-21</lastmod>
+	</url>
+</urlset>
