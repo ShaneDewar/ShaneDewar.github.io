@@ -8,41 +8,66 @@
 	
 	<url>
 		<loc>https://shanedewar.com/about/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/blog/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/first/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/eleventy/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/github-pages/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/launch/</loc>
-		<lastmod>2023-06-21</lastmod>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/python/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/flask/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/socketio/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/project/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/blog/live-chat-flask/</loc>
+		<lastmod>2023-06-24</lastmod>
 	</url>
 </urlset>

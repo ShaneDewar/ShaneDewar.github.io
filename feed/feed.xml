@@ -4,7 +4,7 @@
 	<subtitle>Join me in my explorations in computer science.</subtitle>
 	<link href="https://shanedewar.com/feed/feed.xml" rel="self"/>
 	<link href="https://shanedewar.com/"/>
-	<updated>2023-06-21T00:00:00Z</updated>
+	<updated>2023-06-24T00:00:00Z</updated>
 	<id>https://shanedewar.com/</id>
 	<author>
 		<name>Shane Dewar</name>
@@ -12,12 +12,116 @@
 	</author>
 	
 	<entry>
+		<title>Live Chat with Flask and Flask-SocketIO project.</title>
+		<link href="https://shanedewar.com/blog/live-chat-flask/"/>
+		<updated>2023-06-24T00:00:00Z</updated>
+		<id>https://shanedewar.com/blog/live-chat-flask/</id>
+		<content type="html">&lt;h1 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;&lt;Live-Chat-Flask&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/Live-Chat-Flask&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;description&quot; tabindex=&quot;-1&quot;&gt;Description &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This project was created to experiment with a light real time chat program which works in a browser using Flask. The SocketIO protocol appeared as a great option after a little investigation and the direction I decided to pursue. There are numerous implementations of the SocketIO protocol and I chose to use the flask-socketio package which provides &amp;quot;low latency bi-directional communications between the clients and the server.&amp;quot; Exactly what I want! Additionally, by using the SocketIO protocol, clients have already been  implemented in Python, JavaScript, Swift, Java, C++, and as long as the SocketIO client protocol is implemented a client can be built for a huge array of platforms.&lt;/p&gt;
+&lt;p&gt;A feature I found attractive about SocketIO besides the low latency event based messaging was the ability to message to groups of users by rooms. This fit into the &amp;quot;chat room&amp;quot; concept very neatly and made SocketIO the clear choice. I was easy to find a good guide fitting the concept from &lt;a href=&quot;https://www.youtube.com/@TechWithTim&quot;&gt;Tech With Tim&#39;s&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=mkXdvs8H7TA&quot;&gt;Python Live Chat Room Tutorial Using Flask &amp;amp; SocketIO&lt;/a&gt;. I used the tutorial as a starting point and have extended it slightly. I added a Leave Room button and server side timestamp generation which is stored with the messages as they&#39;re sent. I decided this would be a good simple project to build out a more involved GitHub README setup guide for after getting the project up and running.&lt;/p&gt;
+&lt;p&gt;Some additional features for the future would be the addition for the user to name the chatrooms, perhaps giving different colors to each user name or some other way to make them easier to distinguish when talking in a room, and adding a database to store messages in a persistant way. Also, I am not sold on the message log storage implementaton and think that I would modify it to display a fixed amount of previous messages upon joining a room to limit server load, storage size, and latency to the user.&lt;/p&gt;
+&lt;h2 id=&quot;table-of-contents&quot; tabindex=&quot;-1&quot;&gt;Table of Contents &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;Credits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The project was build and tested in Fedora Linux using FireFox and Falkon as chat clients to check function on both the Gecko and QtWebKit browser engines. It should work in Chrome as well, since QtWebKit is based on Chromium&#39;s web engine.&lt;/p&gt;
+&lt;p&gt;Python verion 3.11.3 and pip version 23.1.2 were used to develop this project. To install once these prerequisites are installed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the project directory in a terminal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; in the working directory of this project (or your virtual environment for the project)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pip will install Flask and flask-socketio (Flask==2.3.2 &amp;amp; flask-socketio==5.3.4)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;run the project with &lt;code&gt;python main.py&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if this step fails try &lt;code&gt;python3 main.py&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The development server runs by default to http://127.0.0.1:5000 and can be stopped with CTRL+C.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;usage&quot; tabindex=&quot;-1&quot;&gt;Usage &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To use the project locally, go to the default URL:port. If you are using only one browser, you will need to open on client in private mode (so the server views your sessions as different users).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is a default Flask secret key that should be changed if this project is going to be used on a public server.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Currently room names are randomly generated and are all capital letters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the browser and go to the appropriate URL.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/ZXXTILOHTj-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/ZXXTILOHTj-889.webp 889w&quot;&gt;&lt;img alt=&quot;Maria creates a chat room&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/ZXXTILOHTj-889.png&quot; width=&quot;889&quot; height=&quot;651&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter your desired chat name, then click &lt;strong&gt;Create New Chat Room&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/dcYYkBLhmn-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/dcYYkBLhmn-889.webp 889w&quot;&gt;&lt;img alt=&quot;Maria enters the chat room&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/dcYYkBLhmn-889.png&quot; width=&quot;889&quot; height=&quot;651&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When a user joins a room there is a broadcast timestamp to all room users. The room code is at the top.
+In the example it is &lt;strong&gt;TLBSWGOC&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/fNt69GYJOs-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/fNt69GYJOs-889.webp 889w&quot;&gt;&lt;img alt=&quot;Pete joins Maria&#39;s chat room&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/fNt69GYJOs-889.png&quot; width=&quot;889&quot; height=&quot;1376&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Other users can join the existing rooms if they have the room code by entering their handle and the code into
+the appropriate spaces and then clicking &lt;strong&gt;Join Room&lt;/strong&gt;. All previous messages in the room will be displayed for them (but not previous user join/disconnection messages).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/rPjC6GWz3I-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/rPjC6GWz3I-889.webp 889w&quot;&gt;&lt;img alt=&quot;Maria and Pete can chat&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/rPjC6GWz3I-889.png&quot; width=&quot;889&quot; height=&quot;1360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The users can now chat by typing their messages and clicking &lt;strong&gt;Send Message&lt;/strong&gt;. Messages will get a time stamp and
+be stored by the server per room. They are not stored in a database so they are lost if the server is shut down. A user&#39;s joining and leaving timestamps are not saved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/TvJCsSiSt_-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/TvJCsSiSt_-889.webp 889w&quot;&gt;&lt;img alt=&quot;Pete disconnects from Maria&#39;s chatroom&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/TvJCsSiSt_-889.png&quot; width=&quot;889&quot; height=&quot;1369&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By clicking &lt;strong&gt;Leave Room&lt;/strong&gt; a user can exit the room and go back to the landing screen. The disconnection timestamp
+takes about 40 seconds to broadcast to the room.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/EuDV45i-rq-889.avif 889w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/EuDV45i-rq-889.webp 889w&quot;&gt;&lt;img alt=&quot;Pete rejoins Maria&#39;s chatroom&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/EuDV45i-rq-889.png&quot; width=&quot;889&quot; height=&quot;1378&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users can rejoin chatrooms in the same way they joined before. All previous messages are displayed when they rejoin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://shanedewar.com/img/nH4QE955SD-1761.avif 1761w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://shanedewar.com/img/nH4QE955SD-1761.webp 1761w&quot;&gt;&lt;img alt=&quot;Pete creates another chatroom&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://shanedewar.com/img/nH4QE955SD-1761.png&quot; width=&quot;1761&quot; height=&quot;1360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Users can have multiple rooms at once. Messages are stored per room.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When there are no more users in the room, it is deleted from the server and the messages are also removed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you are done, the server can be stopped with &lt;code&gt;CTRL+C&lt;/code&gt; in the terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;credits&quot; tabindex=&quot;-1&quot;&gt;Credits &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I followed &lt;a href=&quot;https://www.youtube.com/@TechWithTim&quot;&gt;Tech With Tim&#39;s&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=mkXdvs8H7TA&quot;&gt;Python Live Chat Room Tutorial Using Flask &amp;amp; SocketIO&lt;/a&gt; tutorial for this project.&lt;/p&gt;
+&lt;p&gt;I extended it a bit beyond the tutorial, adding server based time stamps and a &amp;quot;leave room&amp;quot; button. I think further extending it to allow users do have different chat room colors and name colors and selecting room codes would be a good next step. Additonally, hooking up a database to store messages and perhaps only indexing a fixed amount of messages when a user joins would be another worthwhile improvement.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flask-socketio.readthedocs.io/en/latest/intro.html&quot;&gt;Flask-SocketIO&#39;s documentation&lt;/a&gt; was very helpful in getting a grasp with how messages are emitted and broadcast, how rooms are constructed, and other tips.&lt;/p&gt;
+&lt;h2 id=&quot;license&quot; tabindex=&quot;-1&quot;&gt;License &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-flask/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Licensed under the &lt;a href=&quot;https://shanedewar.com/blog/live-chat-flask/LICENSE&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Shane&#39;s first post.</title>
 		<link href="https://shanedewar.com/blog/post1/"/>
 		<updated>2023-06-21T00:00:00Z</updated>
 		<id>https://shanedewar.com/blog/post1/</id>
 		<content type="html">&lt;h2 id=&quot;hi-i-m-shane&quot; tabindex=&quot;-1&quot;&gt;Hi I&#39;m Shane 👋 &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/post1/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Welcome to my portfolio site built off of &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;eleventy&lt;/a&gt; and hosted on GitHub Pages. Besides connecting my GitHub and LinkedIn to my porfolio, as time progresses more of my projects will be published here with some information about why I made them, some examples of how they work, screenshots, etc.&lt;/p&gt;
+&lt;p&gt;Welcome to my portfolio site built off of &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;eleventy&lt;/a&gt; and hosted on GitHub Pages. Besides connecting my &lt;a href=&quot;https://github.com/ShaneDewar&quot;&gt;GitHub&lt;/a&gt; and &lt;a href=&quot;https://linkedin.com/in/shane-dewar/&quot;&gt;LinkedIn&lt;/a&gt; to my porfolio, as time progresses more of my projects will be published here with some information about why I made them, some examples of how they work, screenshots, etc.&lt;/p&gt;
 &lt;pre class=&quot;language-py&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Hello, World!&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Feel free to send me a message or connect with me at any of my links below!&lt;/p&gt;
