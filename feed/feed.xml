@@ -115,7 +115,7 @@ takes about 40 seconds to broadcast to the room.&lt;/li&gt;
 &lt;p&gt;I extended it a bit beyond the tutorial, adding server based time stamps and a &amp;quot;leave room&amp;quot; button. I think further extending it to allow users do have different chat room colors and name colors and selecting room codes would be a good next step. Additonally, hooking up a database to store messages and perhaps only indexing a fixed amount of messages when a user joins would be another worthwhile improvement.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://flask-socketio.readthedocs.io/en/latest/intro.html&quot;&gt;Flask-SocketIO&#39;s documentation&lt;/a&gt; was very helpful in getting a grasp with how messages are emitted and broadcast, how rooms are constructed, and other tips.&lt;/p&gt;
 &lt;h2 id=&quot;license&quot; tabindex=&quot;-1&quot;&gt;License &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-python-flask-socketio/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Licensed under the &lt;a href=&quot;https://shanedewar.com/blog/live-chat-python-flask-socketio/LICENSE&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;Licensed under the &lt;a href=&quot;https://github.com/ShaneDewar/live-chat-python-flask-socketio/blob/main/LICENSE&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 &lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://shanedewar.com/blog/live-chat-python-flask-socketio/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/ShaneDewar/live-chat-python-flask-socketio&quot;&gt;source code is here on my GitHub&lt;/a&gt;.&lt;/p&gt;
 </content>
