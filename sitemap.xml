@@ -67,7 +67,37 @@
 	</url>
 	
 	<url>
+		<loc>https://shanedewar.com/tags/gcp/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/authentication/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/authorization/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/restful/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/api/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://shanedewar.com/blog/live-chat-python-flask-socketio/</loc>
 		<lastmod>2023-06-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/blog/flask-oauth2-restful-api/</loc>
+		<lastmod>2023-07-05</lastmod>
 	</url>
 </urlset>
