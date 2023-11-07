@@ -57,17 +57,12 @@
 	</url>
 	
 	<url>
-		<loc>https://shanedewar.com/tags/socketio/</loc>
+		<loc>https://shanedewar.com/tags/gcp/</loc>
 		<lastmod>2023-06-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://shanedewar.com/tags/project/</loc>
-		<lastmod>2023-06-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://shanedewar.com/tags/gcp/</loc>
 		<lastmod>2023-06-22</lastmod>
 	</url>
 	
@@ -92,6 +87,41 @@
 	</url>
 	
 	<url>
+		<loc>https://shanedewar.com/tags/socketio/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/mongodb/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/expressjs/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/vue3/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/node/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/single-page-application/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/tags/portfolio/</loc>
+		<lastmod>2023-06-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://shanedewar.com/blog/live-chat-python-flask-socketio/</loc>
 		<lastmod>2023-06-24</lastmod>
 	</url>
@@ -99,5 +129,10 @@
 	<url>
 		<loc>https://shanedewar.com/blog/flask-oauth2-restful-api/</loc>
 		<lastmod>2023-07-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://shanedewar.com/blog/mevn-library-spa/</loc>
+		<lastmod>2023-11-21</lastmod>
 	</url>
 </urlset>
